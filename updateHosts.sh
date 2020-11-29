@@ -12,7 +12,12 @@ temphosts2=$(mktemp)
 echo "Downloading ad-blocking hosts files..."
 curl -ksS http://winhelp2002.mvps.org/hosts.txt > $temphosts1
 curl -ksS http://someonewhocares.org/hosts/zero/hosts >> $temphosts1
-curl -ksS "https://block.energized.pro/spark/formats/hosts" >> $temphosts1
+curl -ksS "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0" >> $temphosts1
+curl -ksS https://raw.githubusercontent.com/nomadturk/vpn-adblock/master/hosts-sources/Turkish/hosts >> $temphosts1
+curl -ksS https://adaway.org/hosts.txt >> $temphosts1
+curl -ksS http://www.malwaredomainlist.com/hostslist/hosts.txt >> $temphosts1
+curl -ksS http://hosts-file.net/ad_servers.txt >> $temphosts1
+curl -ksS https://block.energized.pro/assets/sources/filter/ador-energized.txt >> $temphosts1
 curl -ksS https://raw.githubusercontent.com/nomadturk/vpn-adblock/master/hosts-sources/nomad/hosts  >> $temphosts1
 
 
