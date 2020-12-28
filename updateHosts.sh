@@ -17,8 +17,11 @@ curl -ksS https://raw.githubusercontent.com/nomadturk/vpn-adblock/master/hosts-s
 curl -ksS https://adaway.org/hosts.txt >> $temphosts1
 curl -ksS http://www.malwaredomainlist.com/hostslist/hosts.txt >> $temphosts1
 curl -ksS http://hosts-file.net/ad_servers.txt >> $temphosts1
+curl -ksS https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardMobileAds.txt >> $temphosts1
 curl -ksS https://block.energized.pro/assets/sources/filter/ador-energized.txt >> $temphosts1
-curl -ksS https://block.energized.pro/spark/formats/hosts.txt >> $temphosts1
+curl -ksS https://block.energized.pro/bluGo/formats/hosts.txt >> $temphosts1
+curl -ksS https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Yhonay-AntiPopAds.txt >> $temphosts1
+curl -ksS https://block.energized.pro/assets/sources/filter/adguard-dns.txt >> $temphosts1
 curl -ksS https://raw.githubusercontent.com/nomadturk/vpn-adblock/master/hosts-sources/nomad/hosts  >> $temphosts1
 
 
