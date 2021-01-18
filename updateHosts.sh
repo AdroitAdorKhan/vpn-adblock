@@ -78,3 +78,35 @@ echo
 echo "You can always delete or update this file or just remove any references"
 echo "from DNSMasq or whatever you use it with"
 echo
+# Speedster Clean Up
+# nayemador.com
+
+echo "[+] Directory: Entering..."
+cd /usr/local/vpnserver
+echo "[+] Directory: Entered."
+
+
+echo "[+] Packet Log: Cleaningup..."
+cd packet_log/Speedster/
+rm -f *.log 
+echo "[+] Packet Log: Cleaned."
+
+
+echo "[+] Server Log: Cleaningup..."
+cd ../../server_log/
+rm -f *.log 
+echo "[+] Server Log: Cleaned."
+
+
+echo "[+] Security Log: Cleaningup..."
+cd ../security_log/Speedster
+rm -f *.log
+cd ../DEFAULT
+rm -f *.log
+echo "[+] Server Log: Cleaned."
+
+
+echo "[+] DNSMasq Log: Cleaningup..."
+rm -f /var/log/dnsmasq.log 
+echo "[+] DNSMasq Log: Cleaned."
+
